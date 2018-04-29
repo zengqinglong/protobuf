@@ -16,8 +16,7 @@ endif()
 project(protobuf C CXX)
 
 # Add c++11 flags for clang
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11") 
-#原始版本覆盖了cxx_flags，导致android统一标头链接错误，在官方版本修改之前，先做此修改
+set(CMAKE_CXX_FLAGS "-std=c++11")
 
 # Options
 option(protobuf_BUILD_TESTS "Build tests" ON)
